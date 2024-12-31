@@ -1,0 +1,21 @@
+ul{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    list-style-type: none;
+    color: chocolate;
+}
+
+li{
+    cursor: pointer;
+}
+li.hover{
+   background-color: gold;
+   color: chocolate;
+   border-radius: 10px; 
+}
