@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FULLSTACK WEBPAGE</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background-color: #6200ea;
+      color: white;
+      padding: 20px 0;
+    }
+    main {
+      padding: 20px;
+    }
+    button {
+      background-color: #6200ea;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px;
+    }
+    button:hover {
+      background-color: #3700b3;
+    }
+    #output {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #6200ea;
+      border-radius: 5px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FULLSTACK WEBPAGE</h1>
+    <p>Click the buttons for some changes</p>
+  </header>
+  <main>
+    <button onclick="showMessage()">Show Message</button>
+    <button onclick="changeColor()">Change Background</button>
+    <button onclick="resetPage()">Reset</button>
+    <div id="output"></div>
+  </main>
+  <script>
+    function showMessage() {
+      const outputDiv = document.getElementById('output');
+      outputDiv.innerHTML = '<strong>Hello, GitHub Pages!</strong>';
+    }
+
+    function changeColor() {
+      document.body.style.backgroundColor = getRandomColor();
+    }
+
+    function resetPage() {
+      document.body.style.backgroundColor = '#f4f4f9';
+      document.getElementById('output').innerHTML = '';
+    }
+
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+  </script>
+</body>
+</html>
