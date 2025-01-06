@@ -1,21 +1,32 @@
-ul{
-    padding: 0%;
-    margin: 0%;
-    text-decoration: none;
-    list-style-type: none;
-    text-align: center;
+ul {
     display: flex;
-    justify-content: space-between;
-    background-color: aqua;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
     list-style-type: none;
-    color: chocolate;
+    background-color: chocolate;
+    color: aliceblue;
+    padding: 10px;
+}
+  
+.link {
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: aliceblue;
+}
+  
+.link:hover {
+    background-color: rgb(7, 6, 6);
+    color: rgb(210, 210, 30);
 }
 
-li{
-    cursor: pointer;
+.Footer {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    text-align: justify;
+    background-color: rgb(162, 14, 152);
 }
-li.hover{
-   background-color: gold;
-   color: chocolate;
-   border-radius: 10px; 
-}
+
